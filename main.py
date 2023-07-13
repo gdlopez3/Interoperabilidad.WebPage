@@ -19,6 +19,10 @@ def about():
 def personas():
     return render_template('personas.html', personas=personaList)
 
+@app.route('/huespedes')
+def huespedes():
+    return render_template('huespedes.html')
+
 @app.route('/personas', methods=['POST'])
 def add():
     print("llego por aqui a guardar")
