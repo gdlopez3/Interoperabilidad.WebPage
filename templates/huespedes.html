@@ -11,15 +11,18 @@ Lista de Huespedes
     <tr>
       <th scope="col">#</th>
       <th scope="col">Nombre</th>
-      <th scope="col">Email</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Ciudad</th>
     </tr>
   </thead>
   <tbody>
-    {% for guest in guests %}
+    {% for item in huespedesl %}
     <tr>
       <th scope="row">{{ guest.id }}</th>
-      <td>{{ guest.name }}</td>
-      <td>{{ guest.email }}</td>
+      <td>{{ guest.hab }}</td>
+      <td>{{ guest.nombre }}</td>
+      <td>{{ guest.edad }}</td>
+      <td>{{ guest.ciudad }}</td>
     </tr>
     {% endfor %}
   </tbody>
