@@ -21,6 +21,7 @@ def personas():
 
 @app.route('/huespedes')
 def huespedes():
+    
     return render_template('huespedes.html')
 
 @app.route('/personas', methods=['POST'])
